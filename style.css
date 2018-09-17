@@ -95,7 +95,7 @@ html,body {
 }
 .left .info .career {
   margin-top: 5px;
-font: 'Dosis', sans-serif;
+font-family: 'Dosis', sans-serif;
 }
 
 .left .info .social-links {
