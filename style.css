@@ -87,7 +87,7 @@ html,body {
 }
 @media screen and (max-width: 1000px) {
   .left .info, .left .images {
-    margin-top: 300px;
+    margin-top: 150px;
   }
 }
 .left .info .name {
