@@ -1,0 +1,218 @@
+<!-- DOCTYPE HTML -->
+<html>
+<head>
+    <title>Dhviti Patel </title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+</head>
+<body>
+<div id="content"></div>
+<script src="https://fb.me/react-0.14.6.js"></script>
+<script src="https://fb.me/react-dom-0.14.6.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+    <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+<script type="text/jsx">
+/*Add your React code here*/
+var DATA = {    
+    name: 'Dhviti Patel',
+    career: "Computer Engineering Student at University of Waterloo",
+    githubURL: 'https://github.com/dhvitipatel',
+    linkedinURL: 'https://www.linkedin.com/in/dhvitipatel'
+}
+var App = React.createClass({
+    render: function(){
+        return(
+            <div className = "app">
+                <Left 
+                    name = {this.props.profileData.name}
+                    career = {this.props.profileData.career}
+                    githubURL = {this.props.profileData.githubURL}
+                    linkedinURL = {this.props.profileData.linkedinURL} />
+                <Right
+                    intro = {this.props.profileData.intro} />
+            </div>
+        );
+    }
+});
+
+var Left = React.createClass({
+    render: function(){
+        return (
+            <div className = "left">
+                <div className = "bg_img"></div>
+                    <div className = "left-inner">
+                        <div className = "info">
+                            <h1 className = "name">{this.props.name}</h1>
+                            <div className = "career">{this.props.career}</div>
+                            <div className = "profile_links">
+                                <a href = {this.props.githubURL} target = "_blank"><i className = "fa fa-github"></i></a>
+                                <a href = {this.props.linkedinURL} target = "_blank"><i className = "fa fa-linkedin"></i></a>
+                            </div>
+                         
+                        </div>
+                        <div className = "images">
+                                
+                                <img className = "mouse" src = "./images/computer.png"></img>
+                                <img className = "browser" src = "./images/browser.png"></img>
+                                
+                                <img className = "cloud" src = "./images/arrow.png"></img>
+                                <img className = "wifi" src = "./images/internet.png"></img>
+                                <img className = "github" src = "./images/black.png"></img>
+                            </div>
+                    </div>
+                            
+            </div>
+        );
+    }
+});
+var Right = React.createClass({
+    render:function(){
+        return (
+            <div className = "right">
+                <div className = "right-inner"> 
+                    <div className = "introduction">
+                        <h4> Intro </h4>
+                        <div className = "content">
+                            <p className = "intro-p"> I'm a Computer Engineering 2A student at University of Waterloo. </p>
+                            <p className = "intro-p"> My main strengths are in the areas of web development, python programming, c++ programming. </p>
+                            <span className = "intro-p job_hunt"> Currently looking for my second co-op (Jan 2019 - April 2019)</span>
+                        </div>
+                    </div>
+                    <div className = "skills">
+                        <h4> Skills </h4>
+                        <div className = "content">
+                            <div className = "skills_categories">
+                                < strong>Languages: &nbsp; </strong>
+                                <span> C++, C, HTML5, CSS3, JavaScript, Python </span>
+                            </div>
+                            <div className = "skills_categories">
+                                <strong> Libraries &amp; Frameworks:  </strong>
+                                <span> React, jQuery,NTLK, tkinter, Bootstrap </span>
+                            </div>
+                            <div className = "skills_categories">
+                                <strong> Tools &amp; Platforms: </strong>
+                                <span> Firebase, Heroku, Git, ServiceNow, MS Access, MS Office, SharePoint </span>
+                            </div>
+                            <div className = "skills_categories">
+                                <strong> Prototyping &amp; Designing: </strong>
+                                <span> Origami, Google Web Designer, Adobe </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className = "experience">
+                        <h4>Experience</h4>
+                        <div className = "content">
+                             <div className="exp-item">
+                             <div className="job">
+                                <p className = "company">HiRide</p>
+                                <div className="duration">July 2018 &mdash; present </div>
+                             </div>
+                            <div className="title">Developer</div>
+                              <ul className="description">
+                                  <li>Solved bugs in the website post transition from Heroku to Firebase. </li>
+                                  <li>Assisted with HiRide Application Web page, that uses React Redux, Node.js</li>
+                                    <li>Next step is making a chatbot for the webpage.</li>
+                                </ul>
+                            </div>
+                          <div className="exp-item">
+                             <div className="job">
+                                <p className = "company">Toyota Inc</p>
+                                <div className="duration">May 2018 &mdash; August 2018</div>
+                             </div>
+                            <div className="title">SharePoint Devlopment and Support Specialist</div>
+                              <ul className="description">
+                                  <li>Created web services and web pages based on JavaScript Technologies.</li>
+                                  <li>Used ServiceNow to make applications with concepts of web design. </li>
+                                    <li>Configured technical platforms to meet business and functional requirements.</li>
+                                  <li>Documented test strategies, test scenarios, and test cases and executed tests to validate that delivered system adheres to requirements.</li>
+                                  <li>Created SharePoint collaboration sites, built custom workflows, and managed permissions and content as per customers' requests. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className = "projects">
+                        <h4> Projects </h4>
+                        <div className="content">
+                            <div className="project-item">
+                                <div className="project-item">
+                                <div className="project-title">Pykipedia - Virtual Assistant</div>
+                                 <p className="project-desc"> Built a virtual assistant for computer with Python and speech recognition, coded using Wolfram API and Wikipedia API to load data, wxpython for GUI. </p>
+                            </div>
+                                <div className="project-title">Text Sentiment Analyzer - NTLK</div>
+                                 <p className="project-desc"> Coded a Text Sentiment Analyzer in Python using NTLK's Naive Bayes Classifier, built GUI using tkinter. </p>
+                            </div>
+                            <div className="project-item">
+                                <div className="project-title">React Profile</div>
+                                 <p className="project-desc"> Online portfolio site designed and coded from scratch to showcase my skills and past work using React, HTML and CSS. </p>
+                            </div>
+                            <div className="project-item">
+                                <div className="project-title">PEER4PEER</div>
+                                <p className="project-desc">A virtual two-platform app prototype using Oragami, won Best Design Award at UW Local Hack Day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className = "education">
+                        <h4> Education</h4>
+                        <div className = "content">
+                            <div className = "university">University of Waterloo</div>
+                            <div className = "major">Computer Engineering</div>
+                            <div className = "grad_date">Expected Graduation: April 2022</div>
+                            <div className = "courses"> Relevant courses:
+                                <div className = "course_description">
+                                    <ul >
+                                        <li > ECE 150: Fundamentals of Programming</li>
+                                        <li > ECE 250: Data Structures and Algorithms</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     );
+    }
+});
+
+ReactDOM.render(
+    <App profileData = {DATA} />, 
+    document.getElementById('content')
+    );
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Inspired from a project by Brittany Chiang-->
+<!-- Resources: w3schools, reactjs.org/tutorial -->
