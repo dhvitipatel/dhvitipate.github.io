@@ -80,9 +80,9 @@ var Right = React.createClass({
                     <div className = "introduction">
                         <h4> Intro </h4>
                         <div className = "content">
-                            <p className = "intro-p"> I'm a Computer Engineering 2A student at University of Waterloo. </p>
-                            <p className = "intro-p"> My main strengths are in the areas of web development, python programming, c++ programming. </p>
-                            <span className = "intro-p job_hunt"> Currently looking for my second co-op (Jan 2019 - April 2019)</span>
+                            <p className = "intro-p"> I'm a Computer Engineering 2B student at University of Waterloo. </p>
+                            <p className = "intro-p"> My main strengths are in the areas of web development (JavaScript, HTML, CSS), python programming, c++ programming. </p>
+                            <span className = "intro-p job_hunt"> Currently looking for my third co-op (September 2019 - December 2019)</span>
                         </div>
                     </div>
                     <div className = "skills">
@@ -90,19 +90,15 @@ var Right = React.createClass({
                         <div className = "content">
                             <div className = "skills_categories">
                                 < strong>Languages: &nbsp; </strong>
-                                <span> C++, C, HTML5, CSS3, JavaScript, Python </span>
+                                <span> C++, C, JavaScript, Python, HTML5, CSS3, TypeScript</span>
                             </div>
                             <div className = "skills_categories">
                                 <strong> Libraries &amp; Frameworks:  </strong>
-                                <span> React, jQuery,NTLK, tkinter, Bootstrap </span>
+                                <span> React, jQuery, Node, NTLK, tkinter, Angular 2, Mocha, Chai, MySQL, MongoDB </span>
                             </div>
                             <div className = "skills_categories">
                                 <strong> Tools &amp; Platforms: </strong>
-                                <span> Firebase, Heroku, Git, ServiceNow, MS Access, MS Office, SharePoint </span>
-                            </div>
-                            <div className = "skills_categories">
-                                <strong> Prototyping &amp; Designing: </strong>
-                                <span> Origami, Google Web Designer, Adobe </span>
+                                <span> Firebase, Heroku, Git, ServiceNow, Docker, SharePoint, JIRA </span>
                             </div>
                         </div>
                     </div>
@@ -110,16 +106,29 @@ var Right = React.createClass({
                     <div className = "experience">
                         <h4>Experience</h4>
                         <div className = "content">
+                            <div className="exp-item">
+                                <div className="job">
+                                        <p className = "company">Nest Wealth</p>
+                                        <div className="duration">January 2019 &mdash; April 2019 </div>
+                                    </div>
+                                    <div className="title">Software Developer</div>
+                                        <ul className="description">
+                                            <li>Worked with a variety of different languages, frameworks and content management systems such as JavaScript, TypeScript. Node.js, Angular2, MySQL, MongoDB, Docker etc.</li>
+                                            <li>Wrote modern, robust and maintainable code for internal projects.</li>
+                                            <li>Tested code using Mocha and Chai.</li>
+                                            <li>Collaborated with a small team of developers and designers to build a Knowledge Base as a product for the organization using Proprofs CMS.</li>
+                                            <li>Implemented scalable solutions to issues identified in the platform.</li>
+                                        </ul>
+                                    </div>
                              <div className="exp-item">
                              <div className="job">
                                 <p className = "company">HiRide</p>
-                                <div className="duration">July 2018 &mdash; present </div>
+                                <div className="duration">July 2018 &mdash; December 2018 </div>
                              </div>
                             <div className="title">Developer</div>
                               <ul className="description">
-                                  <li>Solved bugs in the website post transition from Heroku to Firebase. </li>
-                                  <li>Assisted with HiRide Application Web page, that uses React Redux, Node.js</li>
-                                    <li>Next step is making a chatbot for the webpage.</li>
+                                  <li>Developed the HiRide web app, using React, Redux, Node.</li>
+                                  <li>Solved web app bugs post transition from Heroku to Firebase.</li>
                                 </ul>
                             </div>
                           <div className="exp-item">
@@ -129,11 +138,10 @@ var Right = React.createClass({
                              </div>
                             <div className="title">SharePoint Devlopment and Support Specialist</div>
                               <ul className="description">
-                                  <li>Created web services and web pages based on JavaScript Technologies.</li>
-                                  <li>Used ServiceNow to make applications with concepts of web design. </li>
-                                    <li>Configured technical platforms to meet business and functional requirements.</li>
-                                  <li>Documented test strategies, test scenarios, and test cases and executed tests to validate that delivered system adheres to requirements.</li>
-                                  <li>Created SharePoint collaboration sites, built custom workflows, and managed permissions and content as per customers' requests. </li>
+                                  <li>Designed and developed web services and web pages using JavaScript in Service Now.</li>
+                                  <li>Configured PowerApps to meet business and functional requirements. </li>
+                                    <li>Documented test strategies, scenarios, and cases.</li>
+                                  <li>Created SharePoint collaboration sites, built custom workflows, and managed permissions and content as per customers' requests.</li>
                                 </ul>
                             </div>
                         </div>
@@ -142,10 +150,14 @@ var Right = React.createClass({
                         <h4> Projects </h4>
                         <div className="content">
                             <div className="project-item">
-                                <div className="project-item">
+                                <div className="project-title">Askway</div>
+                                    <p className="project-desc"> Built a real time chat widget using Python, JavaScript, Pusher, jQuery, Bootstrap, Axios and Popper. </p>
+                            </div>
+                            <div className="project-item">
                                 <div className="project-title">Pykipedia - Virtual Assistant</div>
                                  <p className="project-desc"> Built a virtual assistant for computer with Python and speech recognition, coded using Wolfram API and Wikipedia API to load data, wxpython for GUI. </p>
                             </div>
+                            <div className="project-item">
                                 <div className="project-title">Text Sentiment Analyzer - NTLK</div>
                                  <p className="project-desc"> Coded a Text Sentiment Analyzer in Python using NTLK's Naive Bayes Classifier, built GUI using tkinter. </p>
                             </div>
