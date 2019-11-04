@@ -57,15 +57,6 @@ var Left = React.createClass({
                             </div>
                          
                         </div>
-                        <div className = "images">
-                                
-                                <img className = "mouse" src = "./images/computer.png"></img>
-                                <img className = "browser" src = "./images/browser.png"></img>
-                                
-                                <img className = "cloud" src = "./images/arrow.png"></img>
-                                <img className = "wifi" src = "./images/internet.png"></img>
-                                <img className = "github" src = "./images/black.png"></img>
-                            </div>
                     </div>
                             
             </div>
@@ -80,9 +71,9 @@ var Right = React.createClass({
                     <div className = "introduction">
                         <h4> Intro </h4>
                         <div className = "content">
-                            <p className = "intro-p"> I'm a Computer Engineering 2B student at University of Waterloo. </p>
-                            <p className = "intro-p"> My main strengths are in the areas of web development (JavaScript, HTML, CSS), python programming, c++ programming. </p>
-                            <span className = "intro-p job_hunt"> Currently looking for my third co-op (September 2019 - December 2019)</span>
+                            <p className = "intro-p"> I'm a Computer Engineering 3A student at University of Waterloo. </p>
+                            <p className = "intro-p"> Software Developer In Progress. My main strengths are C++, TypeScript, JavaScript, HTML, CSS, Python </p>
+                            <span className = "intro-p job_hunt"> Seeking Summer 2020 SWE Internships</span>
                         </div>
                     </div>
                     <div className = "skills">
@@ -90,11 +81,11 @@ var Right = React.createClass({
                         <div className = "content">
                             <div className = "skills_categories">
                                 < strong>Languages: &nbsp; </strong>
-                                <span> C++, C, JavaScript, Python, HTML5, CSS3, TypeScript</span>
+                                <span> C++, C, , TypeScript, JavaScript, Python, HTML5, CSS3</span>
                             </div>
                             <div className = "skills_categories">
                                 <strong> Libraries &amp; Frameworks:  </strong>
-                                <span> React, jQuery, Node, NTLK, tkinter, Angular 2, Mocha, Chai, MySQL, MongoDB </span>
+                                <span> jQuery, Node, NTLK, tkinter, Angular 2, Mocha, Chai, MySQL, MongoDB </span>
                             </div>
                             <div className = "skills_categories">
                                 <strong> Tools &amp; Platforms: </strong>
@@ -108,40 +99,68 @@ var Right = React.createClass({
                         <div className = "content">
                             <div className="exp-item">
                                 <div className="job">
-                                        <p className = "company">Nest Wealth</p>
+                                        <p className = "company">Minted
+                                                <span className="location"> | San Francisco, California </span>
+                                        </p>
+                                        <div className="duration">September 2019 &mdash; December 2019 </div>
+                                    </div>
+                                    <div className="title">Software Engineering Intern</div>
+                                        <ul className="description">
+                                            <li>Improved critical system stability by fixing and standardizing log rotation
+                                                    policy across multiple environments.</li>
+                                            <li>Wrote Python scripts to gather data by using AWS Responses to query MySQL to study requirements
+                                                    for an upcoming project.</li>
+                                        </ul>
+                                    </div>
+                            <div className="exp-item">
+                                <div className="job">
+                                        <p className = "company">Nest Wealth
+                                                <span className="location"> | Toronto, Canada </span>
+                                        </p>
                                         <div className="duration">January 2019 &mdash; April 2019 </div>
                                     </div>
                                     <div className="title">Software Developer</div>
                                         <ul className="description">
-                                            <li>Worked with a variety of different languages, frameworks and content management systems such as JavaScript, TypeScript. Node.js, Angular2, MySQL, MongoDB, Docker etc.</li>
-                                            <li>Wrote modern, robust and maintainable code for internal projects.</li>
-                                            <li>Tested code using Mocha and Chai.</li>
-                                            <li>Collaborated with a small team of developers and designers to build a Knowledge Base as a product for the organization using Proprofs CMS.</li>
-                                            <li>Implemented scalable solutions to issues identified in the platform.</li>
+                                            <li>Conceptualized, designed and implemented complete form signing process, for
+                                                corporate client using DocuSign API in NodeJS.</li>
+                                            <li>Spearheaded Angular Migration of admin portal to TypeScript to improve net
+                                                performance by over 30%.</li>
+                                            <li>Lead agile product development on existing CMS systems to create a Knowledge
+                                                Base, to help CX team communicate better with clients.</li>
+                                            <li>Gained experience in writing modern, robust and maintainable code for Nest
+                                                Admin and Client portal.</li>
                                         </ul>
                                     </div>
                              <div className="exp-item">
                              <div className="job">
-                                <p className = "company">HiRide</p>
+                                <p className = "company">HiRide
+                                        <span className="location"> | Waterloo, Canada </span>
+                                </p>
                                 <div className="duration">July 2018 &mdash; December 2018 </div>
                              </div>
-                            <div className="title">Developer</div>
+                            <div className="title">Web Developer</div>
                               <ul className="description">
-                                  <li>Developed the HiRide web app, using React, Redux, Node.</li>
-                                  <li>Solved web app bugs post transition from Heroku to Firebase.</li>
+                                  <li>Redesigned the entire new website as part of revamped branding with help of
+                                    Embedded JS templating for better user experience.</li>
+                                  <li>Minimized code duplication on the new website using a template engine that
+                                    allowed for 20% of load boost for page data while making it easier to maintain.</li>
+                                  <li>Debugged and productionised code in the web app, using React, Redux, Node for better performance.</li>
+                                  <li>Solved technical bugs post transition from Heroku to Firebase.</li>
                                 </ul>
                             </div>
                           <div className="exp-item">
                              <div className="job">
-                                <p className = "company">Toyota Inc</p>
+                                <p className = "company">Toyota Inc
+                                        <span className="location"> | Toronto, Canada </span>
+                                </p>
                                 <div className="duration">May 2018 &mdash; August 2018</div>
                              </div>
-                            <div className="title">SharePoint Devlopment and Support Specialist</div>
+                            <div className="title">SharePoint Developer</div>
                               <ul className="description">
-                                  <li>Designed and developed web services and web pages using JavaScript in Service Now.</li>
-                                  <li>Configured PowerApps to meet business and functional requirements. </li>
-                                    <li>Documented test strategies, scenarios, and cases.</li>
-                                  <li>Created SharePoint collaboration sites, built custom workflows, and managed permissions and content as per customers' requests.</li>
+                                  <li>Designed and developed Overtime Manager using JavaScript in Service Now to
+                                    make overtime-tracking easier for employees.</li>
+                                  <li>Created SharePoint collaboration sites, built custom workflows, and managed
+                                    permissions.</li>
                                 </ul>
                             </div>
                         </div>
@@ -180,8 +199,10 @@ var Right = React.createClass({
                             <div className = "courses"> Relevant courses:
                                 <div className = "course_description">
                                     <ul >
-                                        <li > ECE 150: Fundamentals of Programming</li>
-                                        <li > ECE 250: Data Structures and Algorithms</li>
+                                        <li >Fundamentals of Programming</li>
+                                        <li >Data Structures and Algorithms</li>
+                                        <li>Systems Programming and Concurrency</li>
+                                        <li>Embedded Microprocessor Systems</li>
                                     </ul>
                                 </div>
                             </div>

@@ -25,7 +25,7 @@ html,body {
 
 .left .bg_img{
     background-size: cover;
-    background-image: url(bg1.jpg);
+    background-image: url(images/bg2.jpg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -33,7 +33,7 @@ html,body {
     right: 0;
     left: 0;
     bottom: 0;
-    opacity: 0.15;
+    opacity: 0.35;
 }
 .left .bg_img :before{
   content: '';
@@ -44,7 +44,7 @@ html,body {
   left: 0;
   background: #660033; 
    background-image: linear-gradient(to left top, #660033 , #ff0080);
-  opacity: 0.85;
+  opacity: 0.5;
 }
 .left-inner, .right-inner {
     padding: 50px;
@@ -62,8 +62,9 @@ html,body {
   min-height: 24em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
+  justify-content: baseline;
   height: 100%;
+  margin-bottom: 10px;
 }
 
 .left .info {
@@ -78,12 +79,14 @@ html,body {
     font-size: 35px;
   width: 90%;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 50%;
+  margin-bottom: 10px;
+  margin-left: 10px;;
 }
 .info {
-    height: 50%;
-       background-color: azure;
-    background:rgba(63, 191, 191, 0.1);
+    height: 100%;
+       /* background-color: azure; */
+    /* background:rgba(63, 191, 191, 0.1); */
 }
 @media screen and (max-width: 1000px) {
   .left .info, .left .images {
@@ -92,14 +95,17 @@ html,body {
 }
 .left .info .name {
   font-weight: 500;
+  margin-left: 10px;;
 }
 .left .info .career {
   margin-top: 5px;
 font-family: 'Dosis', sans-serif;
+margin-left: 10px;
 }
 
 .left .info .social-links {
   margin-top: 100px;
+  margin-left: 10px;
 }
 
 
@@ -314,6 +320,18 @@ font-family: 'Dosis', sans-serif;
   position: relative;
   top: 1px;
   margin-bottom: 5px;
+}
+
+.right .experience .exp-item .company .location {
+  font-size: 13px;
+  font-weight: 500;
+  /* float: right; */
+  color: #aaa;
+  text-transform: uppercase;
+  position: relative;
+  top: 1px;
+  margin-bottom: 5px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 340px) {
